@@ -1,0 +1,138 @@
+<head>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "nav main right"
+            "footer footer footer";
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 15px;
+            padding: 10px;
+        }
+        .header{
+            grid-area: header;
+            background-color: rgb(177, 233, 114);
+            padding: 20px;
+            text-align: center;
+            font-size: 45px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+        .nav{
+            grid-area: nav;
+            background-color: rgb(96, 233, 158);
+            text-emphasis-color: black;
+            color: rgb(17, 16, 16);
+            padding: 15px;
+        }
+        .main{
+            grid-area: main;
+            background-color: rgb(146, 241, 37);
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .right{
+            grid-area: right;
+            background-color: rgb(218, 121, 180);
+            padding: 20px;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: rgb(156, 241, 174);
+            padding: 20px;
+            text-align: center;
+        }
+        a{
+            color: rgb(238, 72, 113);
+            text-decoration: none;
+            display: block;
+            margin: 10px;
+        }
+        h1{
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+   <div class="grid">
+        <div class="header">Welcome To World News Webpage</div>
+        <div class="nav">
+            <h1><strong>Navigation</strong></h1>
+            <a href="#section 1">HTML Introduction</a>
+            <a href="#section 2">HTML Elements</a>
+            <a href="#section 3">HTML Attributes</a>
+            <a href="#section 4">HTML CSS</a>
+            <a href="#section 5">HTML Javascript</a>
+            <a href="#section 6">Conclusion</a>
+        </div>
+        <div class="main">
+            <h1 id="section 1">HTML Introduction</h1>
+            <p><h2><strong>What is HTML?</strong></h2></p>
+            <ul>
+                <li>HTML stands for Hyper Text Markup Language</li>
+                <li>HTML is the standard markup language for creating Web pages</li>
+                <li>HTML describes the structure of a Web page</li>
+                <li>HTML elements tell the browser how to display the content</li>
+                <li>HTML consists of a series of elements</li>
+            </ul>
+            <h1 id="section 2">HTML Elements</h1>
+            <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
+            <table border="1">
+                <tr>
+                    <th>Tag</th>
+                    <th>Element Content</th>
+                </tr>
+                <tr>
+                    <td>h1 tag</td>
+                    <td>Heading</td>
+                </tr>
+                <tr>
+                    <td>p tag</td>
+                    <td>Paragraph</td>
+                </tr>
+            </table>
+            <h1 id="section 3">HTML Attributes</h1>
+            <ul>
+                <li>All HTML elements can have attributes</li>
+                <li>Attributes provide additional information about elements</li>
+                <li>Attributes are always specified in the start tag</li>
+                <li>Attributes usually come in name/value pairs like: name="value"</li>
+            </ul>
+            <h2>The href Attribute</h2>
+            <p>The a tag defines a hyperlink. The href attribute specifies the URL of the page the link</p>
+            <h2>The src Attribute</h2>
+            <p>The img tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be display</p>
+            <h1 id="section 4">HTML CSS</h1>
+            <p><h2><strong>What is CSS?</strong></h2></p>
+            <p>Cascading Style Sheets (CSS) is used to format the layout of a webpage.</p>
+            <h3>Using CSS?</h3>
+            <p>CSS can be added to HTML documents in 3 ways:</p>
+            <ul>
+                <li><bold></bold>Inline</bold>- by using the style attribute inside HTML elements</li>
+                <li><bold>Internal</bold>-by using a style element in the head section</li>
+                <li><bold>External</bold>- by using a link element to link to an external CSS file</li>
+            </ul>
+            <h1 id="section 5">HTML Javascript</h1>
+            <p>JavaScript makes HTML pages more dynamic and interactive.</p>
+            <ul>
+                <li>The HTML script tag is used to define a client-side script (JavaScript).</li>
+                <li>The script element either contains script statements, or it points to an external script file through the src attribute.</li>
+                <li>Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.</li>
+            </ul>
+            <h1 id="section 6">Conclusion</h1>
+            <p>HTML is an essential step in web development as it serves as the backbone for creating structured, accessible, and functional web pages.</p>
+        </div>
+        <div class="right">
+            <center><h2>Advertisement</h2></center>
+            <img src="buy 1 get 1.jpg!bw700" width="300px" height="250px">
+            <center>
+            <p><button><bold>Order now</bold></button></p>
+            </center>
+            <p><bold></bold>Contact:world@news.com</bold></p>
+        </div>
+        <div class="footer">
+            &copy;We use cookies to ensure you have the best browsing experience on our website. By using our site, you acknowledge that you have read and understood our Cookie Policy & Privacy Policy.
+        </div>
+   </div>  
+</body>
